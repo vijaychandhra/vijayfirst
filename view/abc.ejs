@@ -1,0 +1,43 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <div class="container bg-primary">
+      <div class="row">
+        <div class="col"><h1>name</h1></div>
+        <div class="col"><h1>dish</h1></div>
+        <div class="col"><h1>price</h1></div>
+        <div class="col"><h1>select</select></h1></div>
+      </div>
+    </div>
+    <style>
+      
+    </style>
+<div class="container bg-primary " style="justify-content: center;"><% for( i in p){%>
+  <div class="row " style="border: 3px solid black;">
+    <div class="col" id="hii" onclick="submit()" style="padding: 35px;border-right:  3px solid black;" ><var></var><h1><%= p[i].name%>  </h1></div>
+      <div class="col" style="justify-content: center;border-right:  3px solid black; "><img  style="width: 140px;height: 120px;" src="<%= p[i].product%> "></div>
+      <div class="col" ><h1 ><%= p[i].price%> </h1></div>
+      <div class="col " style="border-left: 3px solid black;"><button bg-danger ><a href="/come/<%= p[i].name %>">select</a></button></div>
+  </div>
+  <% }%>
+  </div>
+  <div id="id">
+    <a href="/go"><button>go to cart</button></a>
+  </div>
+  
+</body><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+  
+</script>
+</html>
